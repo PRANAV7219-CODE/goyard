@@ -302,7 +302,6 @@ main .view5 .gallery .item img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 50%;
 }
 main .view5 .gallery .item p {
   font-weight: 200;
