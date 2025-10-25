@@ -111,7 +111,9 @@ main .view1 .text .heroheading .p {
 main .view1 .text .heroheading p {
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.762);
+  font-size: 2.5rem;
   font-weight: 300;
+  letter-spacing: 3px;
 }
 main .view1 .img {
   position: absolute;
@@ -168,6 +170,154 @@ main .view2 .gallery .item p {
   font-size: 0.9rem;
   color: rgba(0, 0, 0, 0.822);
 }
+main .view3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+main .view3 .gallery-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .view3 .gallery-top h3 {
+  text-align: center;
+  font-weight: 400;
+  padding-top: 1rem;
+  letter-spacing: 3px;
+}
+main .view3 .gallery-top .item {
+  width: 100%;
+  text-align: center;
+}
+main .view3 .gallery-top .item img {
+  width: 100%;
+  padding: 2rem 1rem;
+}
+main .view3 .gallery-top .item p {
+  display: inline-block;
+  text-align: center;
+  color: black;
+  font-weight: 350;
+  padding-top: 1rem;
+  letter-spacing: 3px;
+  border-bottom: 1px solid orange;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+main .view3 .img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 17%;
+  width: 10%;
+  display: none;
+}
+main .view4 {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 3rem;
+}
+main .view4 video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -99;
+}
+main .view4 .text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .view4 .text .heroheading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .view4 .text .heroheading .p {
+  color: rgba(255, 255, 255, 0.762);
+  font-size: 1rem;
+  padding-top: 1.5rem;
+  border-bottom: 1px solid orange;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-bottom: 0.8rem;
+}
+main .view4 .text .heroheading p {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.762);
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+main .view4 .img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 17%;
+  width: 40%;
+}
+main .view5 {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f6f1ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+main .view5 h2 {
+  color: rgb(1, 32, 1);
+  font-weight: 200;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+}
+main .view5 .gallery {
+  display: flex;
+  gap: 1rem;
+}
+main .view5 .gallery .item {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
+  gap: 1rem;
+}
+main .view5 .gallery .item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 50%;
+}
+main .view5 .gallery .item p {
+  font-weight: 200;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.822);
+}
+main .view5 h3 {
+  font-weight: 400;
+  color: rgb(3, 58, 3);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  width: 80%;
+  letter-spacing: 2px;
+}
 
 @media (min-width: 900px) {
   main .nav .nav-top .icon .menu {
@@ -195,5 +345,43 @@ main .view2 .gallery .item p {
   }
   main .view2 .gallery .item {
     width: 33%;
+  }
+  main .view2 h3 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 350;
+  }
+  main .view3 {
+    flex-direction: row;
+  }
+  main .view3 .gallery-top {
+    width: 30%;
+    padding: 1rem;
+  }
+  main .view3 .gallery-top h3 {
+    font-weight: 300;
+    font-size: 2rem;
+    white-space: nowrap;
+    text-align: center;
+  }
+  main .view3 .img {
+    display: block;
+  }
+  main .view4 {
+    width: 100%;
+    height: 80vh;
+  }
+  main .view4 .text .heroheading p {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+  main .view5 .gallery .item {
+    width: 33%;
+  }
+  main .view5 h3 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 350;
   }
 }/*# sourceMappingURL=style.css.map */
